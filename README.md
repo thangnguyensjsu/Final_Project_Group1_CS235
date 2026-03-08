@@ -5,9 +5,9 @@ Final_Project_Group1_CS235
 Project Name:
 
 Team Members:
-1. Thang Nguyen - Collaborator
-2. Ryan Chang - Collaborator
-3.
+* Thang Nguyen - Collaborator
+* Ryan Chang - Collaborator
+* 
 
 2. **Abstract**:
 
