@@ -8,6 +8,7 @@ function Checkout(){
         {pic: "Food3.jpg", name: "Menu Item 3", price:30},
         {pic: "Food4.jpg", name: "Menu Item 4", price:240},
     ];
+    
     const listPLMenu = placeholderMenu.map(food=><li><MenuItems picture={food.pic} name={food.name} price={food.price+"$"}/></li>)
     let sum = placeholderMenu.reduce(function(prev, curr){
         return prev + curr.price;

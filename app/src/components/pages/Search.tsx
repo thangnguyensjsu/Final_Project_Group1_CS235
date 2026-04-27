@@ -1,14 +1,19 @@
 import Navbar from "../layout/Navbar";
 import SearchResult from "./SearchResult";
 import { FunnelIcon } from "@heroicons/react/24/outline";
+import TopResult from "./TopResult";
 
 function Search(){
     const placeholders = [
         {pic: "Restaurant1.jpg", name: "Restaurant 1", rating: "5", price: "$$$", distance: "67 mi"}, 
-        {pic: "Restaurant2.jpg", name: "Restaurant 2", rating: "4", price: "$$", distance: "12 mi"},
+        
         {pic: "Restaurant3.jpg", name: "Restaurant 3", rating: "5", price: "$", distance: "250 mi"},
         {pic: "Restaurant4.jpg", name: "Restaurant 4", rating: "1", price: "$", distance: "1.1 m"},
     ];
+
+    const topPick = {pic: "Restaurant2.jpg", name: "Restaurant 2", rating: "4", price: "$$", distance: "12 mi"}
+    
+    
     const listPlaceHolders = placeholders.map(place => <li> <SearchResult picture={place.pic} name={place.name} rating={place.rating} price={place.price} distance={place.distance}/> </li>)
     return(
         <main className="min-h-screen max-h-screen min-w-screen max-w- flex flex-col text-gray-800 font-medium bg-gray-200 items-center">
@@ -38,6 +43,7 @@ function Search(){
                 </div> 
                 <div className="pt-54 pb-16 overflow-y-auto">
                     <ul>
+                        <li><TopResult picture={topPick.pic} name={topPick.name} rating={topPick.rating} price={topPick.price} distance={topPick.distance}/></li>
                         {listPlaceHolders}
                     </ul>
                 </div>
