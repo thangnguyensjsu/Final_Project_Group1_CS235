@@ -13,7 +13,7 @@ const Navbar = () => {
     let location = useLocation();
     return (            
             <div className = "bg-transparent md:min-w-md min-w-screen h-16 fixed top-0 left-0 right-0 z-20 flex flex-col items-center ">
-                <div className="md:min-w-md md:relative justify-between flex">
+                <div className="md:min-w-md min-w-screen md:relative justify-between flex">
                     
                     <button onClick={handleSidebar} className="bg-transparent">
                         <Bars4Icon className="size-12 m-4 text-gray-700 fill-current"/>

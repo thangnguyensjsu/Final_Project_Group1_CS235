@@ -1,15 +1,16 @@
 import Navbar from "../layout/Navbar";
-import SearchResult from "./SearchResult";
+import MenuItems from "./MenuItems";
 import { FunnelIcon } from "@heroicons/react/24/outline";
 
 function Menu(){
     const placeholderMenu = [
-        {pic: "Restaurant1.jpg", name: "Menu Item 1", price: "70$"}, 
-        {pic: "Restaurant2.jpg", name: "Menu Item 2", price: "20$"},
-        {pic: "Restaurant3.jpg", name: "Menu Item 3", price: "35$"},
-        {pic: "Restaurant4.jpg", name: "Menu Item 4", price: "240$"},
+        {pic: "Food1.jpg", name: "Menu Item 1", price: "70$"}, 
+        {pic: "Food2.jpg", name: "Menu Item 2", price: "20$"},
+        {pic: "Food3.jpg", name: "Menu Item 3", price: "35$"},
+        {pic: "Food4.jpg", name: "Menu Item 4", price: "240$"},
     ];
     //const listPlaceHolders = placeholders.map(place => <li> <SearchResult picture={place.pic} name={place.name} rating={place.rating} price={place.price} distance={place.distance}/> </li>)
+    const listPLMenu = placeholderMenu.map(food=><li><MenuItems picture={food.pic} name={food.name} price={food.price}/></li>)
     return(
         <main className="min-h-screen max-h-screen min-w-screen max-w- flex flex-col text-gray-800 font-medium bg-gray-200 items-center">
             <Navbar/>
@@ -37,18 +38,16 @@ function Menu(){
                 <div className="pt-54 pb-16 overflow-y-auto">
                     <ul>
                         {/*listPlaceHolders*/}
+                        {listPLMenu}
                     </ul>
                 </div>
             </div>
             
              <div className="space-y-1 md:min-w-md min-w-screen fixed bottom-0 bg-white border-t border-gray-200 rounded-b-xl flex justify-center items-center">
-                <a href="/" className="my-6 active:bg-black bg-gray-700 text-white drop-shadow-xs px-36 py-3 rounded-xl ">
+                <a href="/checkout" className="my-6 active:bg-black bg-gray-700 text-white drop-shadow-xs px-36 py-3 rounded-xl ">
                     <span className="font-semibold">Place Order</span>
                 </a>
-            </div>
-              
-             
-            
+            </div>             
         </main>
     );
 }

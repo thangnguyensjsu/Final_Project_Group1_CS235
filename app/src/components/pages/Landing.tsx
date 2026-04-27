@@ -27,6 +27,6 @@ function Landing () {
                 </div>
             </div>
         </main>
-    )
+    );
 }
 export default Landing;

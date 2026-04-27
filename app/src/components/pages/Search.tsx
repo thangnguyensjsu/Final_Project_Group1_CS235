@@ -15,6 +15,7 @@ function Search(){
             <Navbar/>
             <div className="md:min-w-md min-w-screen bg-white min-h-screen rounded-xl overflow-y-auto">
                 <div className="fixed md:min-w-md min-w-screen pb-2 border-b border-gray-200 bg-white z-10 rounded-t-xl">
+                    {/** No functionality yet */}
                     <div className="mx-4 mt-18 mb-2">
                         <div className="mt-2">
                             <div className="flex items-center rounded-4xl drop-shadow-xs bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-blue-200">
@@ -23,16 +24,17 @@ function Search(){
                             </div>
                         </div>
                     </div>
+                    
                     <div className="grid grid-cols-2 content-center">
                         <button className="flex items-center justify-center outline-gray-300 bg-white active:bg-gray-200 active:text-black text-gray-900 outline-1 drop-shadow-xs px-2 mx-8 my-2 rounded-2xl ">
                             <FunnelIcon className="size-5"/>
                             <span className="font-semibold mr-2"> Filter </span> 
                         </button>
                         <button className="outline-gray-300 bg-white active:bg-gray-200 active:text-black text-gray-900 outline-1  drop-shadow-xs px-2 py-3 mx-8 my-2 rounded-2xl">
-                            <span className="font-semibold">Search</span>
+                            <a className="font-semibold" href="/search">Search</a>
                         </button>
-                
                     </div>
+                    {/** */}
                 </div> 
                 <div className="pt-54 pb-16 overflow-y-auto">
                     <ul>
