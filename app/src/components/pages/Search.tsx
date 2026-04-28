@@ -4,9 +4,9 @@ import { FunnelIcon } from "@heroicons/react/24/outline";
 import TopResult from "./TopResult";
 
 function Search(){
+
     const placeholders = [
-        {pic: "Restaurant1.jpg", name: "Restaurant 1", rating: "5", price: "$$$", distance: "67 mi"}, 
-        
+        {pic: "Restaurant1.jpg", name: "Restaurant 1", rating: "5", price: "$$$", distance: "67 mi"},         
         {pic: "Restaurant3.jpg", name: "Restaurant 3", rating: "5", price: "$", distance: "250 mi"},
         {pic: "Restaurant4.jpg", name: "Restaurant 4", rating: "1", price: "$", distance: "1.1 m"},
     ];

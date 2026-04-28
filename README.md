@@ -29,6 +29,17 @@ Team Members:
 
 11. **Setup Instructions**:
 
+    (may need revision, haven't actually properly tested this on another setup)
+    - install npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)
+        - (can use prebuilt installer from: https://nodejs.org/en/download/)
+    - cd into app
+    - run:
+        npm i
+        - to install dependencies
+    - run
+        npm run dev
+    - open localhost:5173 in browser
+
 12. **Demo Video Link**:
 
 13. **Contributions Breakdown**:
