@@ -79,15 +79,32 @@
 
 11. **Setup Instructions**:
 
-    (may need revision, haven't actually properly tested this on another setup)
-    - install npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)
-        - (can use prebuilt installer from: https://nodejs.org/en/download/)
-    - cd into app
-    - run:
+    - Install npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)
+
+        - Windows/Mac: 
+            - Open https://nodejs.org/en/download/ in your browser
+            - IGNORE the command line instructions unless you already have Chocolatey or Docker installed
+            - Download and run the prebuilt Node.js installer for Windows/MacOS 
+
+        - Linux: 
+            - Install 'curl' with 'apt' on command line:
+                sudo apt install curl
+            - Open https://nodejs.org/en/download/ in your browser
+            - Change dropdowns to Get Node.js [v25.9.0] for [Linux] using [nvm] with [npm]
+            - IGNORE the prebuilt instructions
+            - follow instructions for command line: 
+                - # Download and install nvm: ...
+                - should NOT require corepack
+
+    - cd from this folder into /app on command line
+    - Run:
         npm i
-        - to install dependencies
-    - run
         npm run dev
+        
+    - 'npm i' installs required dependencies (TailwindCSS, react)
+        - ideally, should only need to be run once after cloning project
+    - 'npm run dev' launches the webpage 
+
     - open localhost:5173 in browser
 
 12. **Demo Video Link**:
@@ -144,7 +161,7 @@
                     ├── MenuItems.tsx      # Individual menu item card
                     ├── Checkout.tsx       # Order summary with tax & total
                     ├── OrderConfirm.tsx   # Order confirmation screen
-                    ├── Orders.tsx         # Current orders placeholder
-                    └── Register.tsx       # User registration form
+                    ├── Orders.tsx         # Current orders (placeholder, only shows empty page)
+                    └── Register.tsx       # User registration form (Doesn't work)
     ```
 
