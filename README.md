@@ -92,8 +92,7 @@
             - Open https://nodejs.org/en/download/ in your browser
             - Change dropdowns to Get Node.js [v25.9.0] for [Linux] using [nvm] with [npm]
             - IGNORE the prebuilt instructions
-            - follow instructions for command line: 
-                - # Download and install nvm: ...
+            - follow instructions for command line
                 - should NOT require corepack
 
     - cd from this folder into /app on command line
