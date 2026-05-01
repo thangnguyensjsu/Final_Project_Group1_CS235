@@ -7,7 +7,7 @@
    **Team Members:**
    * Thang Nguyen - Research & Problem Statement
    * Ryan Chang - Frontend Development
-   * Sree Mourya Gojja - Frontend Development, Backend Design & Database
+   * Sree Mourya Gojja - Frontend Development
 
 2. **Abstract**
 
