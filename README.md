@@ -79,15 +79,31 @@
 
 11. **Setup Instructions**:
 
-    (may need revision, haven't actually properly tested this on another setup)
-    - install npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)
-        - (can use prebuilt installer from: https://nodejs.org/en/download/)
-    - cd into app
-    - run:
+    - Install npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)
+
+        - **Windows/Mac**: 
+            - Open https://nodejs.org/en/download/ in your browser
+            - IGNORE the command line instructions unless you already have Chocolatey or Docker installed
+            - Download and run the prebuilt Node.js installer for Windows/MacOS 
+
+        - **Linux**: 
+            - Install 'curl' with 'apt' on command line:
+                sudo apt install curl
+            - Open https://nodejs.org/en/download/ in your browser
+            - Change dropdowns to Get Node.js [v25.9.0] for [Linux] using [nvm] with [npm]
+            - IGNORE the prebuilt instructions
+            - follow instructions for command line
+                - should **NOT** require corepack
+
+    - cd from this folder into /app on command line
+    - Run:
         npm i
-        - to install dependencies
-    - run
         npm run dev
+        
+    - 'npm i' installs required dependencies (TailwindCSS, react)
+        - ideally, should only need to be run once after cloning project
+    - 'npm run dev' launches the webpage 
+
     - open localhost:5173 in browser
 
 12. **Demo Video Link**:
@@ -98,9 +114,9 @@
 
     | Team Member | Contributions |
     |---|---|
-    | Thang Nguyen | Research & problem statement, heuristic evaluation of Yelp, thematic analysis, hypothesis formulation |
-    | Ryan Chang | Frontend development (React/TypeScript components, routing, UI styling) |
-    | Sree Mourya Gojja | Frontend development, backend design, database architecture |
+    | Thang Nguyen | Research & Problem Statements, Heuristic Evaluation of Yelp, Thematic Analysis, Hypothesis Formulation |
+    | Ryan Chang | Initial Frontend Setup, Layout, and Page Routing (React/TypeScript components, routing) |
+    | Sree Mourya Gojja | Further Frontend Development and Styling (React/TypeScript components, UI styling)  |
 
 14. **Appendix: Repository Structure**
 
